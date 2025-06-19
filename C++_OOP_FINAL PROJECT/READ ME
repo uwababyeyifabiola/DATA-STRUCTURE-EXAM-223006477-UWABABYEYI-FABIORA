@@ -1,0 +1,5 @@
+This project simulates an ATM cash dispenser system using C++ and object-oriented programming principles. 
+It defines a Denomination struct to store currency values and their available counts dynamically.An abstract base class CashDispenser declares a pure virtual method dispense(int amount) and manages denominations, 
+allowing  dynamic addition and removal. Two derived classes implement different dispensing strategies: GreedyDispenser uses the largest denominations first, whil OptimalDispenser aims to minimize the number of notes.
+A dynamic array of CashDispenser* enables polymorphic behavior, dispatching the correct dispense method at runtime. Pointer arithmetic is used to manipulate the denomination array efficiently, and dynamic memory 
+management ensures scalability.
